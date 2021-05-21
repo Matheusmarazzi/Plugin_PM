@@ -1,7 +1,7 @@
 
 
 
-$(documents).on("click", "#camera", function(){
+$(document).on("click", "#camera", function(){
       navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
         destinationType: Camera.DestinationType.FILE_URI,
         correctOrientation: true,
@@ -34,7 +34,7 @@ $(documents).on("click", "#camera", function(){
 
     }
 
-$(documents).on("click","#local",function(){
+$(document).on("click","#local",function(){
 
 
     var onSuccess = function(position) {
